@@ -516,29 +516,53 @@ align-self: center;
   gap: 25px;
   margin-top: 30px;
 }
-.toggle {
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
+.toggle-item {
   background-color: var(--clr-blanco);
+  align-items: center;
+  padding: 0;
+  border-radius: 8px;
+  padding: 20px;
+}
+.toggle-barra {
+  display: grid ;
+  grid-template-columns: repeat(3, min-content);
   justify-content: space-between;
   gap: 15px;
-  align-items: center;
-  padding: 8px 24px;
-  border-radius: 8px;
 }
+/* .toggle-name {
+  padding: 1em;
+  cursor: pointer;
+} */
 .toggle-titulo {
   color: var(--clr-primario);
   font-family: var(--fuenteParrafo);
+  cursor: pointer;
 }
-.iconos {
-  height: 32px;
-  width: 32px;
+.toggle-icono {
+  height: 32;
+  width: 32;
   fill: var(--clr-secundario);
+  cursor: pointer;
 }
-.icono-toggle {
+.activador-toggle {
   height: 24;
   width: 24;
   fill: var(--clr-terciario);
+  cursor: pointer;
+}
+.toggle-contenido {
+  grid-column: 1/4;
+
+  padding: 0 2em;
+  overflow: hidden;
+  height: 0;
+  transition: .3s height;
+}
+.toggle-contenido::before, .toggle-contenido::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: transparent;
 }
 @media (min-width: 550px) {
   .acerca-toggles {
