@@ -468,7 +468,7 @@ align-self: center;
 
 /**-------Parrafo Intro--------**/
 .parrafo {
-  padding-block: 190px;
+  padding-block: 80px;
 }
 .parrafo-intro {
   background-color: var(--clr-primario);
@@ -478,6 +478,7 @@ align-self: center;
 }
 .parrafo .heading {
   text-align: left;
+  line-height: 1.2;
 }
 @media (min-width: 900px) {
   .parrafo {
@@ -485,7 +486,6 @@ align-self: center;
   }
   .parrafo .heading {
     text-align: center;
-    line-height: 1.1;
     width: 80%;
   }
 }
